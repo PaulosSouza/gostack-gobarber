@@ -44,8 +44,6 @@ class ListProviderAppointmentsService {
         },
       );
 
-      console.log('A query foi executada');
-
       await this.cacheProvider.save(cacheKey, appointments);
     }
 
