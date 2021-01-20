@@ -71,7 +71,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd ~/app/gobarber-backend
-            ./node-modules/.bin/typeorm migration:run
+            ./node_modules/.bin/typeorm migration:run
         
         # Restart no servidor node
       - name: Restart node server
